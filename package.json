@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "desarrollo de una app de backend para mi portfolio",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franco-Odone/portfolio-backend.git"
+  },
+  "keywords": [
+    "portfolio",
+    "backend"
+  ],
+  "author": "Franco Odone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Franco-Odone/portfolio-backend/issues"
+  },
+  "homepage": "https://github.com/Franco-Odone/portfolio-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
