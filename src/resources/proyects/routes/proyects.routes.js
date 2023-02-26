@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { verifyToken } from "../../auth/middlewares/auth.middleware.js";
 import {
   createProyect,
   deleteProyectById,
@@ -11,7 +12,7 @@ const proyectsRouter = Router();
 
 const baseURI = "/proyects";
 
-proyectsRouter.post(baseURI, createProyect);
+proyectsRouter.post(baseURI, verifyToken, createProyect);
 proyectsRouter.get(baseURI, getProyects);
 proyectsRouter.get(`${baseURI}:id`, getProyectById);
 proyectsRouter.put(`${baseURI}:id`, updateProyectById);

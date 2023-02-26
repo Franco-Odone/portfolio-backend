@@ -3,8 +3,8 @@ import { proyect } from "../models/proyects.model.js";
 // Funciones handlers
 export const createProyect = async (req, res) => {
   // Obtengo el payload del token
-  //   const userLogged = req.user;
-  //   console.log(`🚀 ~ userLogged`, userLogged);
+  const userLogged = req.user;
+  console.log(`🚀 ~ userLogged`, userLogged);
   const body = req.body;
   const newProyect = await proyect.create(body);
   res.json({ newProyect });
